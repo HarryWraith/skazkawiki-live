@@ -2,7 +2,6 @@
   {
     "entityType": "NPC",
     "href": "/npcs/king",
-    "id": "cmr4f02oq0001gkx07q3vjzoc",
     "name": "King",
     "searchText": "king king npc this is an asset created to test the build. supporting npc dead king of a very important kingdom the nine hells none supporting npc dead king of a very important kingdom human male baldur's gate i am test writing some rubbish see how this looks",
     "summary": "This is an asset created to test the build.",
@@ -12,7 +11,6 @@
   {
     "entityType": "NPC",
     "href": "/npcs/lira",
-    "id": "cmr161ywz00018cx0cm2qt6y9",
     "name": "Lira",
     "searchText": "lira lira npc test major npc alive spy unknown none major npc alive spy human female unknown test test",
     "summary": "test",
@@ -24,7 +22,6 @@
   {
     "entityType": "PLACE",
     "href": "/places/velkaria",
-    "id": "cmr4f02o30000gkx0zmnjtklm",
     "name": "Velkaria",
     "searchText": "velkaria velkaria place manual verification place for timeline integration. other unknown other unknown",
     "summary": "Manual verification place for timeline integration.",
@@ -34,7 +31,6 @@
   {
     "entityType": "TIMELINE_EVENT",
     "href": "/timeline/test-year-0",
-    "id": "cmrfxgoib0000lwx0sxhpa9yb",
     "name": "Test year 0",
     "searchText": "test year 0 test-year-0 timeline event test age of shit, year 0, spring world changing age of shit, year 0, spring world changing age of shit 0 spring manual timeline root manual-timeline-root manual timeline root timeline",
     "summary": "test",
@@ -44,7 +40,6 @@
   {
     "entityType": "TIMELINE_EVENT",
     "href": "/timeline/the-fall-of-velkaria",
-    "id": "cmr3zhtab0000dgx0a1ob6tud",
     "name": "The Fall of Velkaria",
     "searchText": "the fall of velkaria the-fall-of-velkaria timeline event velkaria collapses in a red night, reshaping the western roads and the ash gate. age of shadow, year 14, autumn ashwane 22 world changing age of shadow, year 14, autumn ashwane 22 world changing disaster age of shadow 14 autumn ashwane 22 velkaria fell in a single red night, leaving the western roads broken and its bells silent. the fall scattered noble houses, ended the river tithe, and made the ash gate a forbidden crossing. velkaria collapse history manual timeline child manual-timeline-child manual timeline child timeline",
     "summary": "Velkaria collapses in a red night, reshaping the western roads and the Ash Gate.",
