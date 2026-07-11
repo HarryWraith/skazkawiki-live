@@ -1,0 +1,13 @@
+{
+  "entityCount": 5,
+  "generatedAt": "2026-07-11T07:39:40.687Z",
+  "mapMarkerCount": 0,
+  "outputDir": "dist/player-site",
+  "searchDocumentCount": 5,
+  "status": "Ready",
+  "validatedAt": "2026-07-11T07:39:40.687Z",
+  "worldId": "world_skazka",
+  "worldName": "Skazka",
+  "publicBasePath": "",
+  "version": 1
+}
