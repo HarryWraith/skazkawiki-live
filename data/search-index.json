@@ -21,6 +21,18 @@
   },
   {
     "entityType": "PLACE",
+    "href": "/places/e-001b-test-kingdom",
+    "name": "E-001B Test Kingdom",
+    "searchText": "e-001b test kingdom e-001b-test-kingdom place a test kingdom created for place hierarchy verification. kingdom active kingdom active a broad test realm used to verify place browsing, hierarchy, search, relationships, and media roles. e-001b manual-test",
+    "summary": "A test kingdom created for Place hierarchy verification.",
+    "tags": [
+      "e-001b",
+      "manual-test"
+    ],
+    "typeLabel": "Place"
+  },
+  {
+    "entityType": "PLACE",
     "href": "/places/velkaria",
     "name": "Velkaria",
     "searchText": "velkaria velkaria place manual verification place for timeline integration. other unknown other unknown",
