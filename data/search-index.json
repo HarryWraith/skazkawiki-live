@@ -64,6 +64,35 @@
     "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><polyline points=\"14.5 17.5 3 6 3 3 6 3 17.5 14.5\" /><line x1=\"13\" x2=\"19\" y1=\"19\" y2=\"13\" /><line x1=\"16\" x2=\"20\" y1=\"16\" y2=\"20\" /><line x1=\"19\" x2=\"21\" y1=\"21\" y2=\"19\" /><polyline points=\"14.5 6.5 18 3 21 3 21 6 17.5 9.5\" /><line x1=\"5\" x2=\"9\" y1=\"14\" y2=\"18\" /><line x1=\"7\" x2=\"4\" y1=\"17\" y2=\"20\" /><line x1=\"3\" x2=\"5\" y1=\"19\" y2=\"21\" /></svg>"
   },
   {
+    "entityId": "cmrm8ngvf0000i8x00e41ygad",
+    "entityType": "CHARACTER",
+    "facts": [
+      {
+        "label": "Player",
+        "value": "Josh"
+      },
+      {
+        "label": "Species",
+        "value": "Human"
+      },
+      {
+        "label": "Classes",
+        "value": "Fighter (Rune Knight) 5"
+      }
+    ],
+    "href": "/characters/greigor",
+    "iconKey": "UserRound",
+    "name": "Greigor",
+    "searchText": "greigor greigor characters character human fighter (rune knight) 5 player josh species human classes fighter (rune knight) 5 josh human 18 51 walking 30 ft. level 5 josh human 18 51 walking 30 ft. raider clanmember chaotic neutral giant, common, sign, undercommon testing where i can put the backstory.",
+    "sectionKey": "characters",
+    "sectionLabel": "Characters",
+    "summary": "Human Fighter (Rune Knight) 5",
+    "tags": [],
+    "typeLabel": "Character",
+    "visualIdentityKey": "characters",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"12\" cy=\"8\" r=\"5\" /><path d=\"M20 21a8 8 0 0 0-16 0\" /></svg>"
+  },
+  {
     "entityId": "cmrive75c0001box0alpzp6f0",
     "entityType": "EVENT",
     "facts": [
@@ -154,6 +183,35 @@
       "era",
       "timeline"
     ],
+    "typeLabel": "Event",
+    "visualIdentityKey": "events",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
+  },
+  {
+    "entityId": "cmrmdvfsr00002cx0tqublwqw",
+    "entityType": "EVENT",
+    "facts": [
+      {
+        "label": "Date",
+        "value": "-1000"
+      },
+      {
+        "label": "Category",
+        "value": "Magic"
+      },
+      {
+        "label": "Importance",
+        "value": "Normal"
+      }
+    ],
+    "href": "/events/sunrise",
+    "iconKey": "Feather",
+    "name": "Sunrise",
+    "searchText": "sunrise sunrise events event no summary has been added yet. date -1000 category magic importance normal -1000 magic normal -1000 magic normal",
+    "sectionKey": "events",
+    "sectionLabel": "Events",
+    "summary": "No summary has been added yet.",
+    "tags": [],
     "typeLabel": "Event",
     "visualIdentityKey": "events",
     "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
