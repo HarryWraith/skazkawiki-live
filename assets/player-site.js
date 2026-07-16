@@ -1,6 +1,6 @@
 
 function rel(href) {
-  const base = "";
+  const base = "/skazkawiki-live";
   if (href.startsWith("/") && base) {
     return (base === "/" ? "" : base) + href;
   }

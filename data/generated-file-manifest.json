@@ -1,0 +1,30 @@
+{
+  "files": [
+    ".nojekyll",
+    "artefacts/index.html",
+    "assets/media/dev-world-glass-coast-banner.svg",
+    "assets/media/dev-world-glass-coast-icon.svg",
+    "assets/player-site.css",
+    "assets/player-site.js",
+    "bestiary/index.html",
+    "characters/index.html",
+    "data/generated-file-manifest.json",
+    "data/search-index.json",
+    "events/index.html",
+    "gods/index.html",
+    "index.html",
+    "maps/index.html",
+    "npcs/index.html",
+    "npcs/lio-marren/index.html",
+    "npcs/lio-mother/index.html",
+    "organisations/index.html",
+    "places/index.html",
+    "search/index.html",
+    "timeline/index.html"
+  ],
+  "generatedAt": "2026-07-16T09:04:37.918Z",
+  "publicBasePath": "/skazkawiki-live",
+  "version": 1,
+  "worldId": "world_glass_coast",
+  "worldName": "Glass Coast"
+}
