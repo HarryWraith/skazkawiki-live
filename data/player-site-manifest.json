@@ -1,0 +1,51 @@
+{
+  "artifactBuildId": "ddcf0cd6c757",
+  "defaultWorld": {
+    "id": "world_skazka",
+    "slug": "skazka"
+  },
+  "generatedAt": "2026-07-16T20:54:54.693Z",
+  "publicBasePath": "/skazkawiki-live",
+  "rootRoute": "/",
+  "version": 1,
+  "worlds": [
+    {
+      "displayName": "Skazka",
+      "entityCounts": {
+        "maps": 1,
+        "places": 1,
+        "npcs": 1,
+        "characters": 1,
+        "organisations": 1,
+        "events": 7,
+        "bestiary": 1,
+        "artefacts": 1,
+        "gods": 1
+      },
+      "id": "world_skazka",
+      "searchDocumentCount": 15,
+      "slug": "skazka",
+      "timelineAvailable": true,
+      "worldRootRoute": "/worlds/skazka/"
+    },
+    {
+      "displayName": "Glass Coast",
+      "entityCounts": {
+        "maps": 0,
+        "places": 0,
+        "npcs": 2,
+        "characters": 0,
+        "organisations": 0,
+        "events": 0,
+        "bestiary": 0,
+        "artefacts": 0,
+        "gods": 0
+      },
+      "id": "world_glass_coast",
+      "searchDocumentCount": 2,
+      "slug": "glass-coast",
+      "timelineAvailable": false,
+      "worldRootRoute": "/worlds/glass-coast/"
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+[
+  {
+    "entityId": "dev-artefact-brass-thaw-key",
+    "entityType": "ARTEFACT",
+    "facts": [
+      {
+        "label": "Kind",
+        "value": "Magic Item"
+      },
+      {
+        "label": "Category",
+        "value": "Relic"
+      },
+      {
+        "label": "Rarity",
+        "value": "Rare"
+      }
+    ],
+    "href": "/worlds/skazka/artefacts/brass-thaw-key",
+    "iconKey": "Gem",
+    "name": "The Brass Thaw Key",
+    "searchText": "the brass thaw key brass-thaw-key artefacts artefact a brass key tied to river treaties and spring bargains. kind magic item category relic rarity rare rare the brass key warms when held near a treaty that has been broken.",
+    "sectionKey": "artefacts",
+    "sectionLabel": "Artefacts",
+    "summary": "A brass key tied to river treaties and spring bargains.",
+    "tags": [],
+    "typeLabel": "Artefact",
+    "visualIdentityKey": "artefacts",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.5 3 8 9l4 13 4-13-2.5-6\" /><path d=\"M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z\" /><path d=\"M2 9h20\" /></svg>"
+  },
+  {
+    "entityId": "dev-bestiary-frostmane-horse",
+    "entityType": "BESTIARY_ENTRY",
+    "facts": [
+      {
+        "label": "Creature Type",
+        "value": "fey"
+      },
+      {
+        "label": "Challenge Rating",
+        "value": "2"
+      },
+      {
+        "label": "Size",
+        "value": "Large"
+      }
+    ],
+    "href": "/worlds/skazka/bestiary/frostmane-horse",
+    "iconKey": "Swords",
+    "name": "Frostmane Horse",
+    "searchText": "frostmane horse frostmane-horse bestiary bestiary entry a pale fey horse seen near thawing river crossings. creature type fey challenge rating 2 size large large fey 2 fey cr 2 large 2 neutral good 14 45 (6d10 + 12) 60 ft. these pale horses are said to hear oaths spoken over frozen rivers.",
+    "sectionKey": "bestiary",
+    "sectionLabel": "Bestiary",
+    "summary": "A pale fey horse seen near thawing river crossings.",
+    "tags": [],
+    "typeLabel": "Bestiary Entry",
+    "visualIdentityKey": "bestiary",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><polyline points=\"14.5 17.5 3 6 3 3 6 3 17.5 14.5\" /><line x1=\"13\" x2=\"19\" y1=\"19\" y2=\"13\" /><line x1=\"16\" x2=\"20\" y1=\"16\" y2=\"20\" /><line x1=\"19\" x2=\"21\" y1=\"21\" y2=\"19\" /><polyline points=\"14.5 6.5 18 3 21 3 21 6 17.5 9.5\" /><line x1=\"5\" x2=\"9\" y1=\"14\" y2=\"18\" /><line x1=\"7\" x2=\"4\" y1=\"17\" y2=\"20\" /><line x1=\"3\" x2=\"5\" y1=\"19\" y2=\"21\" /></svg>"
+  },
+  {
+    "entityId": "cmrm8ngvf0000i8x00e41ygad",
+    "entityType": "CHARACTER",
+    "facts": [
+      {
+        "label": "Player",
+        "value": "Josh"
+      },
+      {
+        "label": "Species",
+        "value": "Human"
+      },
+      {
+        "label": "Classes",
+        "value": "Fighter (Rune Knight) 5"
+      }
+    ],
+    "href": "/worlds/skazka/characters/greigor",
+    "iconKey": "UserRound",
+    "name": "Greigor",
+    "searchText": "greigor greigor characters character human fighter (rune knight) 5 player josh species human classes fighter (rune knight) 5 josh human 18 51 walking 30 ft. level 5 josh human 18 51 walking 30 ft. raider clanmember chaotic neutral giant, common, sign, undercommon testing where i can put the backstory.",
+    "sectionKey": "characters",
+    "sectionLabel": "Characters",
+    "summary": "Human Fighter (Rune Knight) 5",
+    "tags": [],
+    "typeLabel": "Character",
+    "visualIdentityKey": "characters",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"12\" cy=\"8\" r=\"5\" /><path d=\"M20 21a8 8 0 0 0-16 0\" /></svg>"
+  },
+  {
+    "entityId": "dev-event-era-thawing-roads",
+    "entityType": "EVENT",
+    "facts": [
+      {
+        "label": "Date",
+        "value": "300 to 340"
+      },
+      {
+        "label": "Category",
+        "value": "Era"
+      },
+      {
+        "label": "Importance",
+        "value": "World Changing"
+      }
+    ],
+    "href": "/worlds/skazka/events/era-of-thawing-roads",
+    "iconKey": "Feather",
+    "name": "Era of Thawing Roads",
+    "searchText": "era of thawing roads era-of-thawing-roads events event an era event rendered as a full-height timeline zone. date 300 to 340 category era importance world changing era timeline 300 to 340 era world changing 300 to 340 era world changing era timeline an era spanning the uncertain years after the thaw.",
+    "sectionKey": "events",
+    "sectionLabel": "Events",
+    "summary": "An Era Event rendered as a full-height Timeline zone.",
+    "tags": [
+      "era",
+      "timeline"
+    ],
+    "typeLabel": "Event",
+    "visualIdentityKey": "events",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
+  },
+  {
+    "entityId": "cmrmdvfsr00002cx0tqublwqw",
+    "entityType": "EVENT",
+    "facts": [
+      {
+        "label": "Date",
+        "value": "-1000"
+      },
+      {
+        "label": "Category",
+        "value": "Magic"
+      },
+      {
+        "label": "Importance",
+        "value": "Normal"
+      }
+    ],
+    "href": "/worlds/skazka/events/sunrise",
+    "iconKey": "Feather",
+    "name": "Sunrise",
+    "searchText": "sunrise sunrise events event no summary has been added yet. date -1000 category magic importance normal -1000 magic normal -1000 magic normal",
+    "sectionKey": "events",
+    "sectionLabel": "Events",
+    "summary": "No summary has been added yet.",
+    "tags": [],
+    "typeLabel": "Event",
+    "visualIdentityKey": "events",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
+  },
+  {
+    "entityId": "cmrit5vzb0002qgx08hmb3izu",
+    "entityType": "EVENT",
+    "facts": [
+      {
+        "label": "Date",
+        "value": "100 to 200"
+      },
+      {
+        "label": "Category",
+        "value": "Disaster"
+      },
+      {
+        "label": "Importance",
+        "value": "Major"
+      }
+    ],
+    "href": "/worlds/skazka/events/test-non-era-span",
+    "iconKey": "Feather",
+    "name": "Test non era span",
+    "searchText": "test non era span test-non-era-span events event a test of the half height year span date 100 to 200 category disaster importance major 100 to 200 disaster major 100 to 200 disaster major test writing",
+    "sectionKey": "events",
+    "sectionLabel": "Events",
+    "summary": "A test of the half height year span",
+    "tags": [],
+    "typeLabel": "Event",
+    "visualIdentityKey": "events",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
+  },
+  {
+    "entityId": "dev-event-archive-catalogue",
+    "entityType": "EVENT",
+    "facts": [
+      {
+        "label": "Date",
+        "value": "314"
+      },
+      {
+        "label": "Category",
+        "value": "Discovery"
+      },
+      {
+        "label": "Importance",
+        "value": "Minor"
+      }
+    ],
+    "href": "/worlds/skazka/events/archive-catalogue",
+    "iconKey": "Feather",
+    "name": "The Archive Catalogue",
+    "searchText": "the archive catalogue archive-catalogue events event an event excluded from the timeline. date 314 category discovery importance minor not timeline 314 discovery minor 314 discovery minor not timeline the archive publishes a public catalogue but it is not a timeline item.",
+    "sectionKey": "events",
+    "sectionLabel": "Events",
+    "summary": "An Event excluded from the Timeline.",
+    "tags": [
+      "not timeline"
+    ],
+    "typeLabel": "Event",
+    "visualIdentityKey": "events",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
+  },
+  {
+    "entityId": "dev-event-near-overlap",
+    "entityType": "EVENT",
+    "facts": [
+      {
+        "label": "Date",
+        "value": "312"
+      },
+      {
+        "label": "Category",
+        "value": "Political"
+      },
+      {
+        "label": "Importance",
+        "value": "Normal"
+      }
+    ],
+    "href": "/worlds/skazka/events/second-toll-debate",
+    "iconKey": "Feather",
+    "name": "The Second Toll Debate",
+    "searchText": "the second toll debate second-toll-debate events event an event close to another date for overlap checks. date 312 category political importance normal overlap timeline 312 political normal 312 political normal overlap timeline a near-overlap event for timeline clustering tests.",
+    "sectionKey": "events",
+    "sectionLabel": "Events",
+    "summary": "An Event close to another date for overlap checks.",
+    "tags": [
+      "overlap",
+      "timeline"
+    ],
+    "typeLabel": "Event",
+    "visualIdentityKey": "events",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
+  },
+  {
+    "entityId": "dev-event-spring-thaw-pact",
+    "entityType": "EVENT",
+    "facts": [
+      {
+        "label": "Date",
+        "value": "312"
+      },
+      {
+        "label": "Category",
+        "value": "Founding"
+      },
+      {
+        "label": "Importance",
+        "value": "Major"
+      }
+    ],
+    "href": "/worlds/skazka/events/spring-thaw-pact",
+    "iconKey": "Feather",
+    "name": "The Spring Thaw Pact",
+    "searchText": "the spring thaw pact spring-thaw-pact events event a public treaty that opens the thaw roads each spring. date 312 category founding importance major timeline 312 founding major 312 founding major timeline the thaw roads open and the river archive renews its crossings.",
+    "sectionKey": "events",
+    "sectionLabel": "Events",
+    "summary": "A public treaty that opens the thaw roads each spring.",
+    "tags": [
+      "timeline"
+    ],
+    "typeLabel": "Event",
+    "visualIdentityKey": "events",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
+  },
+  {
+    "entityId": "dev-event-third-seal-copy",
+    "entityType": "EVENT",
+    "facts": [
+      {
+        "label": "Date",
+        "value": "312"
+      },
+      {
+        "label": "Category",
+        "value": "Discovery"
+      },
+      {
+        "label": "Importance",
+        "value": "Minor"
+      }
+    ],
+    "href": "/worlds/skazka/events/third-seal-copy",
+    "iconKey": "Feather",
+    "name": "The Third Seal Copy",
+    "searchText": "the third seal copy third-seal-copy events event a same-year event for local and static collision lane checks. date 312 category discovery importance minor same year timeline 312 discovery minor 312 discovery minor same year timeline three archive seals are copied on the same winter day.",
+    "sectionKey": "events",
+    "sectionLabel": "Events",
+    "summary": "A same-year Event for local and static collision lane checks.",
+    "tags": [
+      "same year",
+      "timeline"
+    ],
+    "typeLabel": "Event",
+    "visualIdentityKey": "events",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
+  },
+  {
+    "entityId": "dev-god-vesna",
+    "entityType": "GOD",
+    "facts": [
+      {
+        "label": "Domains",
+        "value": "spring, rivers, mercy"
+      },
+      {
+        "label": "Pantheon",
+        "value": "Court of Returning Light"
+      }
+    ],
+    "href": "/worlds/skazka/gods/vesna-of-the-thaw",
+    "iconKey": "Crown",
+    "name": "Vesna of the Thaw",
+    "searchText": "vesna of the thaw vesna-of-the-thaw gods god a spring deity associated with dangerous mercy and river ice. domains spring, rivers, mercy pantheon court of returning light thaw, crossings, first blossoms, and bargains. court of returning light the thaw-bearer neutral good thaw, crossings, first blossoms, and bargains. court of returning light spring, rivers, mercy vesna receives prayers when roads thaw and bridges become dangerous.",
+    "sectionKey": "gods",
+    "sectionLabel": "Gods",
+    "summary": "A spring deity associated with dangerous mercy and river ice.",
+    "tags": [],
+    "typeLabel": "God",
+    "visualIdentityKey": "gods",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z\" /><path d=\"M5 21h14\" /></svg>"
+  },
+  {
+    "entityId": "dev-map-skazka-roads",
+    "entityType": "MAP",
+    "facts": [
+      {
+        "label": "Map Type",
+        "value": "Regional"
+      }
+    ],
+    "href": "/worlds/skazka/maps/skazka-roads-map",
+    "iconKey": "Map",
+    "name": "Skazka Roads Map",
+    "searchText": "skazka roads map skazka-roads-map maps map map type regional regional regional regional maps a map with linked and unlinked markers plus one region. regional maps",
+    "sectionKey": "maps",
+    "sectionLabel": "Maps",
+    "summary": "",
+    "tags": [],
+    "typeLabel": "Map",
+    "visualIdentityKey": "maps",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z\" /><path d=\"M15 5.764v15\" /><path d=\"M9 3.236v15\" /></svg>"
+  },
+  {
+    "entityId": "dev-npc-mira-velich",
+    "entityType": "NPC",
+    "facts": [
+      {
+        "label": "Role",
+        "value": "Archive runner"
+      },
+      {
+        "label": "Location",
+        "value": "Starobor Gate"
+      },
+      {
+        "label": "Affiliation",
+        "value": "The River Archive"
+      }
+    ],
+    "href": "/worlds/skazka/npcs/mira-velich",
+    "iconKey": "CircleUserRound",
+    "name": "Mira Velich",
+    "searchText": "mira velich mira-velich npcs npc a careful archive-runner with a perfect memory for seals. role archive runner location starobor gate affiliation the river archive archive runner starobor gate the river archive ally active archive runner starobor gate the river archive human mira carries sealed letters and knows which stories are safe to tell in public.",
+    "sectionKey": "npcs",
+    "sectionLabel": "NPCs",
+    "summary": "A careful archive-runner with a perfect memory for seals.",
+    "tags": [],
+    "typeLabel": "NPC",
+    "visualIdentityKey": "npcs",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.925 20.056a6 6 0 0 0-11.851.001\" /><circle cx=\"12\" cy=\"11\" r=\"4\" /><circle cx=\"12\" cy=\"12\" r=\"10\" /></svg>"
+  },
+  {
+    "entityId": "dev-org-river-archive",
+    "entityType": "ORGANISATION",
+    "facts": [
+      {
+        "label": "Organisation Type",
+        "value": "Archive"
+      },
+      {
+        "label": "Status",
+        "value": "Active"
+      }
+    ],
+    "href": "/worlds/skazka/organisations/river-archive",
+    "iconKey": "Building2",
+    "name": "The River Archive",
+    "searchText": "the river archive river-archive organisations organisation a record-keeping order that stores treaties in waterproof cases. organisation type archive status active archive active a quiet order preserving river records and border oaths.",
+    "sectionKey": "organisations",
+    "sectionLabel": "Organisations",
+    "summary": "A record-keeping order that stores treaties in waterproof cases.",
+    "tags": [],
+    "typeLabel": "Organisation",
+    "visualIdentityKey": "organisations",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 12h4\" /><path d=\"M10 8h4\" /><path d=\"M14 21v-3a2 2 0 0 0-4 0v3\" /><path d=\"M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2\" /><path d=\"M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16\" /></svg>"
+  },
+  {
+    "entityId": "dev-place-starobor-gate",
+    "entityType": "PLACE",
+    "facts": [
+      {
+        "label": "Place Type",
+        "value": "Border Gate"
+      },
+      {
+        "label": "Status",
+        "value": "Active"
+      }
+    ],
+    "href": "/worlds/skazka/places/starobor-gate",
+    "iconKey": "Castle",
+    "name": "Starobor Gate",
+    "searchText": "starobor gate starobor-gate places place a moss-dark border gate where old toll rights still matter. place type border gate status active border gate active starobor gate marks the road into the pine country and appears in the spring thaw pact.",
+    "sectionKey": "places",
+    "sectionLabel": "Places",
+    "summary": "A moss-dark border gate where old toll rights still matter.",
+    "tags": [],
+    "typeLabel": "Place",
+    "visualIdentityKey": "places",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 5V3\" /><path d=\"M14 5V3\" /><path d=\"M15 21v-3a3 3 0 0 0-6 0v3\" /><path d=\"M18 3v8\" /><path d=\"M18 5H6\" /><path d=\"M22 11H2\" /><path d=\"M22 9v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9\" /><path d=\"M6 3v8\" /></svg>"
+  }
+]

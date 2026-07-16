@@ -96,7 +96,7 @@ function initGlobalSearch(input) {
     return;
   }
 
-  fetch(rel("/data/search-index.json"))
+  fetch(input.dataset.searchIndexHref || rel("/data/search-index.json"))
     .then((response) => response.json())
     .then((docs) => {
       function linkFor(href) {
@@ -692,6 +692,13 @@ function initMobileNavigation() {
 }
 
 function bootstrapPlayerSite() {
+  try {
+    const worldSlug = document.querySelector('meta[name="player-site-world-slug"]')?.getAttribute("content");
+    if (worldSlug) {
+      window.localStorage.setItem("world-codex:last-world", worldSlug);
+    }
+  } catch {
+  }
   initMobileNavigation();
   document.querySelectorAll("[data-static-search]").forEach(initGlobalSearch);
   document.querySelectorAll("[data-event-section-search]").forEach(initEventsSearch);
