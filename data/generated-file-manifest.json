@@ -2,8 +2,8 @@
   "files": [
     ".nojekyll",
     "artefacts/index.html",
-    "assets/media/dev-world-glass-coast-banner.svg",
-    "assets/media/dev-world-glass-coast-icon.svg",
+    "assets/media/world-glass-coast-banner.svg",
+    "assets/media/world-glass-coast-icon.svg",
     "assets/player-site.css",
     "assets/player-site.js",
     "bestiary/index.html",
@@ -22,7 +22,7 @@
     "search/index.html",
     "timeline/index.html"
   ],
-  "generatedAt": "2026-07-16T09:04:37.918Z",
+  "generatedAt": "2026-07-16T19:36:18.044Z",
   "publicBasePath": "/skazkawiki-live",
   "version": 1,
   "worldId": "world_glass_coast",

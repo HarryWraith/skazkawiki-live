@@ -144,7 +144,7 @@ function initGlobalSearch(input) {
         ).slice(0, 20);
         results.innerHTML = matches.length
           ? matches.map(resultHtml).join("")
-          : '<p class="empty-inline" role="status">No world content matches this search.</p>';
+          : '<p class="empty-inline" role="status">No results matched your search.</p>';
       }
 
       input.addEventListener("input", render);
@@ -176,7 +176,6 @@ function initEventsSearch(root) {
   if (root.dataset.eventSectionSearchInitialized === "true") {
     return;
   }
-  root.dataset.eventSectionSearchInitialized = "true";
 
   const input = root.querySelector("[data-event-section-search-input]");
   const clearButton = root.querySelector("[data-event-section-search-clear]");
@@ -188,6 +187,7 @@ function initEventsSearch(root) {
   if (!input || !clearButton || !panel || !results || !status || !dataElement || !grid) {
     return;
   }
+  root.dataset.eventSectionSearchInitialized = "true";
 
   let events = [];
   try {
@@ -514,7 +514,185 @@ function initPublishedMap(map) {
 }
 
 
+function initMobileNavigation() {
+  document.documentElement.classList.add("player-site-js");
+  document.body.classList.add("player-site-js");
+
+  const button = document.querySelector(".mobile-menu-button");
+  const closeButton = document.querySelector(".mobile-menu-close");
+  const panel = document.querySelector("[data-mobile-nav-panel]");
+  const backdrop = document.querySelector("[data-mobile-nav-backdrop]");
+  const main = document.querySelector(".page-main");
+  const mobileHeaderLinks = Array.from(document.querySelectorAll(".mobile-header a"));
+  const mobileQuery = window.matchMedia("(max-width: 1023px)");
+
+  if (!button || !panel) {
+    return;
+  }
+
+  let lastFocused = null;
+
+  function isVisibleControl(item) {
+    const style = window.getComputedStyle(item);
+    return item.getClientRects().length > 0 && style.visibility !== "hidden" && style.display !== "none";
+  }
+
+  function focusablePanelControls() {
+    return Array.from(
+      panel.querySelectorAll('a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])'),
+    ).filter(isVisibleControl);
+  }
+
+  function moveFocusIntoPanel() {
+    const controls = focusablePanelControls();
+    const target =
+      controls[0] || (closeButton && isVisibleControl(closeButton) ? closeButton : panel);
+
+    if (target && typeof target.focus === "function") {
+      target.focus({ preventScroll: true });
+    }
+  }
+
+  function setBackgroundInert(isOpen) {
+    if (main) {
+      main.inert = isOpen;
+    }
+
+    mobileHeaderLinks.forEach((link) => {
+      if (isOpen) {
+        link.dataset.previousTabIndex = link.getAttribute("tabindex") || "";
+        link.setAttribute("tabindex", "-1");
+      } else if ("previousTabIndex" in link.dataset) {
+        if (link.dataset.previousTabIndex) {
+          link.setAttribute("tabindex", link.dataset.previousTabIndex);
+        } else {
+          link.removeAttribute("tabindex");
+        }
+        delete link.dataset.previousTabIndex;
+      }
+    });
+  }
+
+  function closeMenu(restoreFocus) {
+    document.body.classList.remove("player-nav-open");
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", "Open navigation menu");
+    if (backdrop) {
+      backdrop.hidden = true;
+    }
+    if (mobileQuery.matches) {
+      panel.setAttribute("aria-hidden", "true");
+    } else {
+      panel.removeAttribute("aria-hidden");
+    }
+    setBackgroundInert(false);
+    if (restoreFocus && lastFocused && typeof lastFocused.focus === "function") {
+      lastFocused.focus();
+    }
+  }
+
+  function openMenu() {
+    if (!mobileQuery.matches) {
+      return;
+    }
+
+    lastFocused =
+      document.activeElement && document.activeElement !== document.body
+        ? document.activeElement
+        : button;
+    document.body.classList.add("player-nav-open");
+    button.setAttribute("aria-expanded", "true");
+    button.setAttribute("aria-label", "Close navigation menu");
+    panel.removeAttribute("aria-hidden");
+    if (backdrop) {
+      backdrop.hidden = false;
+    }
+    setBackgroundInert(true);
+    moveFocusIntoPanel();
+
+    window.requestAnimationFrame(() => {
+      if (!panel.contains(document.activeElement)) {
+        moveFocusIntoPanel();
+      }
+    });
+  }
+
+  function syncForViewport() {
+    if (mobileQuery.matches) {
+      closeMenu(false);
+    } else {
+      document.body.classList.remove("player-nav-open");
+      button.setAttribute("aria-expanded", "false");
+      panel.removeAttribute("aria-hidden");
+      if (backdrop) {
+        backdrop.hidden = true;
+      }
+      setBackgroundInert(false);
+    }
+  }
+
+  button.addEventListener("click", () => {
+    if (document.body.classList.contains("player-nav-open")) {
+      closeMenu(true);
+    } else {
+      openMenu();
+    }
+  });
+
+  closeButton?.addEventListener("click", () => closeMenu(true));
+  backdrop?.addEventListener("click", () => closeMenu(true));
+
+  panel.addEventListener("click", (event) => {
+    const target = event.target;
+    const link = target && typeof target.closest === "function" ? target.closest("a[href]") : null;
+    if (link && mobileQuery.matches) {
+      closeMenu(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!document.body.classList.contains("player-nav-open")) {
+      return;
+    }
+
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeMenu(true);
+      return;
+    }
+
+    if (event.key !== "Tab") {
+      return;
+    }
+
+    const controls = focusablePanelControls();
+    if (!controls.length) {
+      event.preventDefault();
+      return;
+    }
+
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
+
+  if (typeof mobileQuery.addEventListener === "function") {
+    mobileQuery.addEventListener("change", syncForViewport);
+  } else if (typeof mobileQuery.addListener === "function") {
+    mobileQuery.addListener(syncForViewport);
+  }
+  syncForViewport();
+}
+
 function bootstrapPlayerSite() {
+  initMobileNavigation();
   document.querySelectorAll("[data-static-search]").forEach(initGlobalSearch);
   document.querySelectorAll("[data-event-section-search]").forEach(initEventsSearch);
   document.querySelectorAll("[data-static-timeline]").forEach(initTimelineSearch);
