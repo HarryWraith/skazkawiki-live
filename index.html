@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="player-site-public-base-path" content="/skazkawiki-live">
   <title>World Codex Player Site</title>
-  <link rel="icon" href="/skazkawiki-live/favicon.ico?v=926bc19b9908">
-  <link rel="stylesheet" href="/skazkawiki-live/assets/player-site.css?v=926bc19b9908">
+  <link rel="icon" href="/skazkawiki-live/favicon.ico?v=6c63f33b57a5">
+  <link rel="stylesheet" href="/skazkawiki-live/assets/player-site.css?v=6c63f33b57a5">
 </head>
 <body data-depth="0">
   <main class="root-redirect">
     <h1>World Codex Player Site</h1>
     <p>Opening the published world.</p>
-    <p><a href="/skazkawiki-live/worlds/skazka/">Open Skazka</a></p>
+    <p><a href="/skazkawiki-live/worlds/caelumbra/">Open Caelumbra</a></p>
   </main>
   <script>
     (() => {
       try {
-        const worlds = ["skazka","glass-coast"];
+        const worlds = ["caelumbra"];
         const remembered = window.localStorage.getItem("world-codex:last-world");
-        const slug = worlds.includes(remembered) ? remembered : "skazka";
+        const slug = worlds.includes(remembered) ? remembered : "caelumbra";
         const here = new URL(window.location.href);
         if (!here.pathname.endsWith("/")) here.pathname += "/";
         window.location.replace(new URL("worlds/" + slug + "/", here).toString());

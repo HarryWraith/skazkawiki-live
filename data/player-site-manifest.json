@@ -1,39 +1,20 @@
 {
-  "artifactBuildId": "926bc19b9908",
+  "artifactBuildId": "6c63f33b57a5",
   "defaultWorld": {
-    "id": "world_skazka",
-    "slug": "skazka"
+    "id": "cmrosxwuk0000b0x0ih7y4zgn",
+    "slug": "caelumbra"
   },
-  "generatedAt": "2026-07-17T08:36:53.994Z",
+  "generatedAt": "2026-07-17T11:54:36.470Z",
   "publicBasePath": "/skazkawiki-live",
   "rootRoute": "/",
   "version": 1,
   "worlds": [
     {
-      "displayName": "Skazka",
-      "entityCounts": {
-        "maps": 1,
-        "places": 1,
-        "npcs": 1,
-        "characters": 1,
-        "organisations": 1,
-        "events": 7,
-        "bestiary": 1,
-        "artefacts": 1,
-        "gods": 1
-      },
-      "id": "world_skazka",
-      "searchDocumentCount": 15,
-      "slug": "skazka",
-      "timelineAvailable": true,
-      "worldRootRoute": "/worlds/skazka/"
-    },
-    {
-      "displayName": "Glass Coast",
+      "displayName": "Caelumbra",
       "entityCounts": {
         "maps": 0,
         "places": 0,
-        "npcs": 2,
+        "npcs": 0,
         "characters": 0,
         "organisations": 0,
         "events": 0,
@@ -41,11 +22,11 @@
         "artefacts": 0,
         "gods": 0
       },
-      "id": "world_glass_coast",
-      "searchDocumentCount": 2,
-      "slug": "glass-coast",
+      "id": "cmrosxwuk0000b0x0ih7y4zgn",
+      "searchDocumentCount": 0,
+      "slug": "caelumbra",
       "timelineAvailable": false,
-      "worldRootRoute": "/worlds/glass-coast/"
+      "worldRootRoute": "/worlds/caelumbra/"
     }
   ]
 }
