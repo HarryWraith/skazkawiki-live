@@ -26,6 +26,7 @@
     "worlds/caelumbra/characters/index.html",
     "worlds/caelumbra/data/search-index.json",
     "worlds/caelumbra/events/index.html",
+    "worlds/caelumbra/events/test/index.html",
     "worlds/caelumbra/gods/index.html",
     "worlds/caelumbra/index.html",
     "worlds/caelumbra/lore/index.html",
@@ -37,23 +38,23 @@
     "worlds/caelumbra/search/index.html",
     "worlds/caelumbra/timeline/index.html"
   ],
-  "generatedAt": "2026-07-17T19:06:49.539Z",
+  "generatedAt": "2026-07-17T19:59:05.743Z",
   "publicBasePath": "/skazkawiki-live",
   "version": 1,
   "defaultWorldId": "cmrosxwuk0000b0x0ih7y4zgn",
   "defaultWorldSlug": "caelumbra",
-  "artifactBuildId": "a8e91a657d07",
+  "artifactBuildId": "e3c2e8cb8346",
   "worlds": [
     {
-      "entityCount": 1,
-      "eventsOnTimelineCount": 0,
-      "fingerprint": "6fcb5d0814789ce3a362bad007f7ceb7fa7af5fa1522f741d16b91e3924c33c9",
+      "entityCount": 2,
+      "eventsOnTimelineCount": 1,
+      "fingerprint": "4945e8812d44804873e428e28af3269c42991782d6512d6d47f1f2ae6a6b5603",
       "id": "cmrosxwuk0000b0x0ih7y4zgn",
       "mapMarkerCount": 0,
       "mediaAssetCount": 2,
       "name": "Caelumbra",
       "regionCount": 0,
-      "searchDocumentCount": 1,
+      "searchDocumentCount": 2,
       "slug": "caelumbra"
     }
   ]
