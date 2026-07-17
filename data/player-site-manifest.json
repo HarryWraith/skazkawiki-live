@@ -1,10 +1,10 @@
 {
-  "artifactBuildId": "6c63f33b57a5",
+  "artifactBuildId": "6d14a5b4e335",
   "defaultWorld": {
     "id": "cmrosxwuk0000b0x0ih7y4zgn",
     "slug": "caelumbra"
   },
-  "generatedAt": "2026-07-17T11:54:36.470Z",
+  "generatedAt": "2026-07-17T18:06:53.158Z",
   "publicBasePath": "/skazkawiki-live",
   "rootRoute": "/",
   "version": 1,
@@ -20,10 +20,11 @@
         "events": 0,
         "bestiary": 0,
         "artefacts": 0,
-        "gods": 0
+        "gods": 0,
+        "lore": 1
       },
       "id": "cmrosxwuk0000b0x0ih7y4zgn",
-      "searchDocumentCount": 0,
+      "searchDocumentCount": 1,
       "slug": "caelumbra",
       "timelineAvailable": false,
       "worldRootRoute": "/worlds/caelumbra/"
