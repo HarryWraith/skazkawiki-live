@@ -68,12 +68,12 @@
     "worlds/skazka/search/index.html",
     "worlds/skazka/timeline/index.html"
   ],
-  "generatedAt": "2026-07-17T07:13:14.026Z",
+  "generatedAt": "2026-07-17T08:42:47.353Z",
   "publicBasePath": "/skazkawiki-live",
   "version": 1,
   "defaultWorldId": "world_skazka",
   "defaultWorldSlug": "skazka",
-  "artifactBuildId": "19b109687bcc",
+  "artifactBuildId": "926bc19b9908",
   "worlds": [
     {
       "entityCount": 15,
