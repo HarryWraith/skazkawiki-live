@@ -1,10 +1,10 @@
 {
-  "artifactBuildId": "6d275fd94147",
+  "artifactBuildId": "19b109687bcc",
   "defaultWorld": {
     "id": "world_skazka",
     "slug": "skazka"
   },
-  "generatedAt": "2026-07-17T05:23:15.154Z",
+  "generatedAt": "2026-07-17T07:13:04.121Z",
   "publicBasePath": "/skazkawiki-live",
   "rootRoute": "/",
   "version": 1,
