@@ -691,6 +691,133 @@ function initMobileNavigation() {
   syncForViewport();
 }
 
+function initMentionPreviews() {
+  const links = Array.from(document.querySelectorAll("[data-entity-mention-link]"));
+
+  if (!links.length) {
+    return;
+  }
+
+  const preview = document.createElement("aside");
+  const previewId = "entity-mention-preview";
+  preview.className = "mention-preview";
+  preview.id = previewId;
+  preview.hidden = true;
+  preview.setAttribute("role", "tooltip");
+  preview.innerHTML = '<div class="mention-preview-head"><span class="mention-preview-icon-wrap" aria-hidden="true"></span><span><strong class="mention-preview-title"></strong><small class="mention-preview-type"></small></span></div><p class="mention-preview-summary"></p>';
+  document.body.appendChild(preview);
+
+  const icon = preview.querySelector(".mention-preview-icon-wrap");
+  const title = preview.querySelector(".mention-preview-title");
+  const type = preview.querySelector(".mention-preview-type");
+  const summary = preview.querySelector(".mention-preview-summary");
+  const pointerQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+  let activeLink = null;
+  let closeTimer = 0;
+  let openTimer = 0;
+
+  function clearTimers() {
+    window.clearTimeout(closeTimer);
+    window.clearTimeout(openTimer);
+  }
+
+  function hidePreview() {
+    clearTimers();
+    preview.hidden = true;
+    if (activeLink) {
+      activeLink.removeAttribute("aria-describedby");
+    }
+    activeLink = null;
+  }
+
+  function placePreview(link) {
+    const rect = link.getBoundingClientRect();
+    const previewRect = preview.getBoundingClientRect();
+    const gap = 10;
+    const margin = 12;
+    let left = rect.left;
+    let top = rect.bottom + gap;
+
+    if (left + previewRect.width > window.innerWidth - margin) {
+      left = window.innerWidth - previewRect.width - margin;
+    }
+
+    if (left < margin) {
+      left = margin;
+    }
+
+    if (top + previewRect.height > window.innerHeight - margin) {
+      top = rect.top - previewRect.height - gap;
+    }
+
+    if (top < margin) {
+      top = margin;
+    }
+
+    preview.style.left = left + "px";
+    preview.style.top = top + "px";
+  }
+
+  function showPreview(link) {
+    clearTimers();
+    activeLink = link;
+    if (icon) {
+      icon.innerHTML = link.dataset.mentionIcon || "";
+    }
+    if (title) {
+      title.textContent = link.dataset.mentionTitle || link.textContent || "";
+    }
+    if (type) {
+      type.textContent = link.dataset.mentionType || "Entity";
+    }
+    if (summary) {
+      summary.textContent =
+        link.dataset.mentionSummary || "No public summary is available.";
+    }
+    preview.className = "mention-preview " + Array.from(link.classList).filter((item) => item.startsWith("theme-")).join(" ");
+    preview.hidden = false;
+    link.setAttribute("aria-describedby", previewId);
+    placePreview(link);
+  }
+
+  function scheduleOpen(link, immediate) {
+    clearTimers();
+    openTimer = window.setTimeout(() => showPreview(link), immediate ? 0 : 180);
+  }
+
+  function scheduleClose() {
+    window.clearTimeout(closeTimer);
+    closeTimer = window.setTimeout(hidePreview, 140);
+  }
+
+  links.forEach((link) => {
+    link.addEventListener("focus", () => scheduleOpen(link, true));
+    link.addEventListener("blur", scheduleClose);
+    link.addEventListener("mouseenter", () => {
+      if (pointerQuery.matches) {
+        scheduleOpen(link, false);
+      }
+    });
+    link.addEventListener("mouseleave", scheduleClose);
+  });
+
+  preview.addEventListener("mouseenter", () => window.clearTimeout(closeTimer));
+  preview.addEventListener("mouseleave", scheduleClose);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !preview.hidden) {
+      event.preventDefault();
+      hidePreview();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (activeLink && !preview.hidden) {
+      placePreview(activeLink);
+    }
+  });
+}
+
 function bootstrapPlayerSite() {
   try {
     const worldSlug = document.querySelector('meta[name="player-site-world-slug"]')?.getAttribute("content");
@@ -704,6 +831,7 @@ function bootstrapPlayerSite() {
   document.querySelectorAll("[data-event-section-search]").forEach(initEventsSearch);
   document.querySelectorAll("[data-static-timeline]").forEach(initTimelineSearch);
   document.querySelectorAll(".published-map").forEach(initPublishedMap);
+  initMentionPreviews();
 }
 
 if (document.readyState === "loading") {
