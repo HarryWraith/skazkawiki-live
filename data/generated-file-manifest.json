@@ -39,12 +39,12 @@
     "worlds/caelumbra/search/index.html",
     "worlds/caelumbra/timeline/index.html"
   ],
-  "generatedAt": "2026-07-18T14:24:18.621Z",
+  "generatedAt": "2026-07-18T14:26:54.392Z",
   "publicBasePath": "/skazkawiki-live",
   "version": 1,
   "defaultWorldId": "cmrosxwuk0000b0x0ih7y4zgn",
   "defaultWorldSlug": "caelumbra",
-  "artifactBuildId": "fbb053590d70",
+  "artifactBuildId": "a1f9f4979b82",
   "worlds": [
     {
       "entityCount": 3,
