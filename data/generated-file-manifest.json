@@ -32,29 +32,30 @@
     "worlds/caelumbra/lore/index.html",
     "worlds/caelumbra/lore/world-creation/index.html",
     "worlds/caelumbra/maps/index.html",
+    "worlds/caelumbra/npcs/billybob/index.html",
     "worlds/caelumbra/npcs/index.html",
     "worlds/caelumbra/organisations/index.html",
     "worlds/caelumbra/places/index.html",
     "worlds/caelumbra/search/index.html",
     "worlds/caelumbra/timeline/index.html"
   ],
-  "generatedAt": "2026-07-18T11:16:41.041Z",
+  "generatedAt": "2026-07-18T11:20:06.592Z",
   "publicBasePath": "/skazkawiki-live",
   "version": 1,
   "defaultWorldId": "cmrosxwuk0000b0x0ih7y4zgn",
   "defaultWorldSlug": "caelumbra",
-  "artifactBuildId": "16b0f251ea2f",
+  "artifactBuildId": "aa18579bc4ec",
   "worlds": [
     {
-      "entityCount": 2,
+      "entityCount": 3,
       "eventsOnTimelineCount": 1,
-      "fingerprint": "f944a23bbb0874547d1e0d0c4741a161525225d3513b4c312c2138f4f5eb59ad",
+      "fingerprint": "9ad9229ce3da83020baf2b55118aa3abf1cfda9f73812710d4852543e3c6ed3c",
       "id": "cmrosxwuk0000b0x0ih7y4zgn",
       "mapMarkerCount": 0,
       "mediaAssetCount": 2,
       "name": "Caelumbra",
       "regionCount": 0,
-      "searchDocumentCount": 2,
+      "searchDocumentCount": 3,
       "slug": "caelumbra"
     }
   ]

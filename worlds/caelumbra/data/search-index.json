@@ -48,5 +48,26 @@
     "typeLabel": "Event",
     "visualIdentityKey": "events",
     "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z\" /><path d=\"M16 8 2 22\" /><path d=\"M17.5 15H9\" /></svg>"
+  },
+  {
+    "entityId": "cmrp8ua170001p8x0znujbyt1",
+    "entityType": "NPC",
+    "facts": [
+      {
+        "label": "Role",
+        "value": "Idiot"
+      }
+    ],
+    "href": "/worlds/caelumbra/npcs/billybob",
+    "iconKey": "CircleUserRound",
+    "name": "BillyBob",
+    "searchText": "billybob billybob npcs npc billybob is the village idiot that seems to pop up in every village. role idiot idiot minor npc alive idiot human male billybob",
+    "sectionKey": "npcs",
+    "sectionLabel": "NPCs",
+    "summary": "BillyBob is the village idiot that seems to pop up in every village.",
+    "tags": [],
+    "typeLabel": "NPC",
+    "visualIdentityKey": "npcs",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.925 20.056a6 6 0 0 0-11.851.001\" /><circle cx=\"12\" cy=\"11\" r=\"4\" /><circle cx=\"12\" cy=\"12\" r=\"10\" /></svg>"
   }
 ]
