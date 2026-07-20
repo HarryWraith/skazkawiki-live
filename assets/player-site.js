@@ -339,6 +339,156 @@ function initTimelineSearch(timeline) {
 }
 
 
+function initImageLightbox() {
+  const triggers = Array.from(document.querySelectorAll("[data-image-lightbox-trigger]"));
+
+  if (!triggers.length) {
+    return;
+  }
+
+  let dialog = null;
+  let lastFocused = null;
+  let previousOverflow = "";
+
+  function focusableControls() {
+    if (!dialog) {
+      return [];
+    }
+
+    return Array.from(
+      dialog.querySelectorAll('button:not([disabled]),a[href],[tabindex]:not([tabindex="-1"])'),
+    ).filter((item) => {
+      const style = window.getComputedStyle(item);
+      return item.getClientRects().length > 0 && style.visibility !== "hidden" && style.display !== "none";
+    });
+  }
+
+  function closeLightbox(restoreFocus) {
+    if (!dialog) {
+      return;
+    }
+
+    const trigger = lastFocused;
+    dialog.remove();
+    dialog = null;
+    document.body.classList.remove("player-lightbox-open");
+    document.body.style.overflow = previousOverflow;
+    if (restoreFocus && trigger && typeof trigger.focus === "function") {
+      trigger.focus({ preventScroll: true });
+    }
+    lastFocused = null;
+  }
+
+  function openLightbox(trigger) {
+    closeLightbox(false);
+    lastFocused =
+      document.activeElement && document.activeElement !== document.body
+        ? document.activeElement
+        : trigger;
+    previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    document.body.classList.add("player-lightbox-open");
+
+    const src = trigger.dataset.lightboxSrc || trigger.querySelector("img")?.getAttribute("src") || "";
+    const alt = trigger.dataset.lightboxAlt || trigger.querySelector("img")?.getAttribute("alt") || "";
+    const title = trigger.dataset.lightboxTitle || alt || "Image";
+    const caption = trigger.dataset.lightboxCaption || "";
+    const width = trigger.dataset.lightboxWidth || "";
+    const height = trigger.dataset.lightboxHeight || "";
+    const titleId = "player-image-lightbox-title";
+    const captionId = caption ? "player-image-lightbox-caption" : "";
+
+    dialog = document.createElement("div");
+    dialog.className = "image-lightbox";
+    dialog.setAttribute("role", "dialog");
+    dialog.setAttribute("aria-modal", "true");
+    dialog.setAttribute("aria-labelledby", titleId);
+    if (captionId) {
+      dialog.setAttribute("aria-describedby", captionId);
+    }
+    dialog.innerHTML =
+      '<figure class="image-lightbox-panel">' +
+      '<div class="image-lightbox-head">' +
+      '<figcaption><h2 id="' + titleId + '"></h2>' +
+      (caption ? '<p id="' + captionId + '"></p>' : '') +
+      '</figcaption>' +
+      '<button class="image-lightbox-close" type="button" aria-label="Close image preview">×</button>' +
+      '</div>' +
+      '<img class="image-lightbox-image" draggable="false">' +
+      '</figure>';
+
+    const titleNode = dialog.querySelector("h2");
+    const captionNode = dialog.querySelector("p");
+    const image = dialog.querySelector("img");
+    const closeButton = dialog.querySelector(".image-lightbox-close");
+
+    if (titleNode) {
+      titleNode.textContent = title;
+    }
+    if (captionNode) {
+      captionNode.textContent = caption;
+    }
+    if (image) {
+      image.alt = alt;
+      image.src = src;
+      if (width) {
+        image.setAttribute("width", width);
+      }
+      if (height) {
+        image.setAttribute("height", height);
+      }
+    }
+
+    document.body.appendChild(dialog);
+    closeButton?.focus({ preventScroll: true });
+
+    closeButton?.addEventListener("click", () => closeLightbox(true));
+    dialog.addEventListener("mousedown", (event) => {
+      if (event.target === dialog) {
+        closeLightbox(true);
+      }
+    });
+  }
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => openLightbox(trigger));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!dialog) {
+      return;
+    }
+
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeLightbox(true);
+      return;
+    }
+
+    if (event.key !== "Tab") {
+      return;
+    }
+
+    const controls = focusableControls();
+    if (!controls.length) {
+      event.preventDefault();
+      return;
+    }
+
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
+}
+
+
 function initPublishedMap(map) {
   if (map.dataset.publishedMapInitialized === "true") {
     return;
@@ -831,6 +981,7 @@ function bootstrapPlayerSite() {
   document.querySelectorAll("[data-event-section-search]").forEach(initEventsSearch);
   document.querySelectorAll("[data-static-timeline]").forEach(initTimelineSearch);
   document.querySelectorAll(".published-map").forEach(initPublishedMap);
+  initImageLightbox();
   initMentionPreviews();
 }
 
