@@ -1,11 +1,11 @@
 {
-  "artifactBuildId": "3dfd71a962ea",
+  "artifactBuildId": "aa28b943ad0a",
   "defaultWorld": {
     "displayName": "Caelumbra",
     "id": "cmrosxwuk0000b0x0ih7y4zgn",
     "slug": "caelumbra"
   },
-  "generatedAt": "2026-07-20T20:17:21.562Z",
+  "generatedAt": "2026-07-20T20:18:28.484Z",
   "publicBasePath": "/skazkawiki-live",
   "rootRoute": "/",
   "version": 1,
@@ -18,11 +18,11 @@
           "contentHash": "c3ff251c79eb9aa43e73521a4497ac9c4513482a39d8d8d585d78caa1659927a",
           "mapHash": "40c40777e739521cb7a078230d2ecdfc742418ed6be5cea066c22d5e198977b4",
           "mediaHash": "325acf72b76675186f47034f8cd9656c62bdc71d0bb4bd1bed85faf664311e7e",
-          "relationshipHash": "593a5163469fffebefdb2dfb3122f2f6cbaf465a17a81a5a3db03307d6a2eab8",
+          "relationshipHash": "f7736c0cc8608a41c621202a0c7fb4c9c75836ca22617b9329d9512b2301b92a",
           "routeHash": "25e641820cd21378718138a9d713696f2477e9087ef3b9b6c50d8d16eb6718a6",
           "searchHash": "673af32e6e3082e0e06246c9c9c0d6efc1e80ca0635d4ae4f9fc5d61a0a1d1e1",
           "timelineHash": "f3cb1be7bab48b23613fd03a7bb3551bf77dd7d4e5000d6abe33575e8bbb1810",
-          "fullHash": "4db066c29e92c6fb49fc570185b0716f47cf849539dbfd53015fbac839ad6250",
+          "fullHash": "2b1066f6159375f545aada6d18fcf99ace8bb3a1bbcca0dfdea1b067f989c4fe",
           "id": "cmrs4aslp0000w8x0q75ra7xt",
           "mediaState": "No media",
           "route": "/places/st-paul",
@@ -31,6 +31,27 @@
           "title": "St Paul",
           "typeLabel": "Place",
           "typePluralLabel": "Places",
+          "worldId": "cmrosxwuk0000b0x0ih7y4zgn",
+          "worldSlug": "caelumbra"
+        },
+        {
+          "classificationHash": "37368fc59e29c260dba542ec65bd05ace0ad355cad46767d1e6ec999262bf416",
+          "contentHash": "b23213f2522035de14cb1afaf5f6d3472220e27c2ae3c615d3327596fa90f14d",
+          "mapHash": "40c40777e739521cb7a078230d2ecdfc742418ed6be5cea066c22d5e198977b4",
+          "mediaHash": "e2ad6ac399b4b0ea97861b7090e7a1edfa55d8ca18b9b1619e62fd3b0e859522",
+          "relationshipHash": "f7736c0cc8608a41c621202a0c7fb4c9c75836ca22617b9329d9512b2301b92a",
+          "routeHash": "12b6245d7a746d2399fc51b317cf771f2064bc6f76d6c94f7df54ee0e39bab3e",
+          "searchHash": "9f0f5f8a06dcfea3f71eee8ea6b7b574b1ecb9b69bbae158a91503e40aa74916",
+          "timelineHash": "f3cb1be7bab48b23613fd03a7bb3551bf77dd7d4e5000d6abe33575e8bbb1810",
+          "fullHash": "43456ae90ae943cea21577fa4ad62abce262e1db545ad126a8bdeabac67f172e",
+          "id": "cmrt1khbu0000gwx008wjvra0",
+          "mediaState": "Primary media assigned",
+          "route": "/npcs/astrum-vanimir",
+          "sectionLabel": "NPCs",
+          "sectionRoute": "/npcs",
+          "title": "Astrum Vanimir",
+          "typeLabel": "NPC",
+          "typePluralLabel": "NPCs",
           "worldId": "cmrosxwuk0000b0x0ih7y4zgn",
           "worldSlug": "caelumbra"
         },
@@ -80,7 +101,7 @@
       "entityCounts": {
         "maps": 0,
         "places": 1,
-        "npcs": 0,
+        "npcs": 1,
         "characters": 0,
         "organisations": 0,
         "events": 1,
@@ -90,18 +111,18 @@
         "lore": 1
       },
       "eventsOnTimelineCount": 1,
-      "hash": "bec981658da2714e2ec51720c424eb0aca976728d612c466ebb5b68559471109",
+      "hash": "45bb3ae2b98a3a6744ea55317a32198eed04bfdbc215bbd37b49c21d35872b57",
       "id": "cmrosxwuk0000b0x0ih7y4zgn",
       "mapMarkerCount": 0,
-      "mediaAssetCount": 2,
+      "mediaAssetCount": 3,
       "regionCount": 0,
-      "relationshipCount": 0,
-      "searchDocumentCount": 3,
+      "relationshipCount": 1,
+      "searchDocumentCount": 4,
       "slug": "caelumbra",
       "timelineAvailable": true,
       "worldHash": "5691b9909e59eeba7ddfd08d01f5d480d06c39ef0d3863de2d7d9f371cdb8754",
       "worldRootRoute": "/worlds/caelumbra/"
     }
   ],
-  "artifactHash": "e1cb73dc70b0687ca8875230e056628fe950c2c9e9748ac7687b5ba72d98ed89"
+  "artifactHash": "0478b33fde609401eb0726547478dbfb1121ab5ad4018903f2ead353581d7137"
 }
