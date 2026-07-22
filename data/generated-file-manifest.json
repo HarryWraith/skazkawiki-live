@@ -47,17 +47,17 @@
     "worlds/caelumbra/search/index.html",
     "worlds/caelumbra/timeline/index.html"
   ],
-  "generatedAt": "2026-07-22T09:46:51.510Z",
+  "generatedAt": "2026-07-22T15:29:39.812Z",
   "publicBasePath": "/skazkawiki-live",
   "version": 1,
   "defaultWorldId": "cmrosxwuk0000b0x0ih7y4zgn",
   "defaultWorldSlug": "caelumbra",
-  "artifactBuildId": "7496f838650e",
+  "artifactBuildId": "54077ad3c86f",
   "worlds": [
     {
       "entityCount": 9,
       "eventsOnTimelineCount": 1,
-      "fingerprint": "6fd1996404d00a0e3a95891694bb2ae0f6fef9e72fa93c81d1b27c92b6f5bb12",
+      "fingerprint": "a5ac54b400d35e20957b75510c07c56926b80ce95dafaae1112336bb00a17ff5",
       "id": "cmrosxwuk0000b0x0ih7y4zgn",
       "mapMarkerCount": 0,
       "mediaAssetCount": 4,

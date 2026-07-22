@@ -172,42 +172,29 @@ function initGlobalSearch(input) {
 }
 
 
-function initEventsSearch(root) {
-  if (root.dataset.eventSectionSearchInitialized === "true") {
+function initPlayerSectionSearch(root) {
+  if (root.dataset.playerSectionSearchInitialized === "true") {
     return;
   }
 
-  const input = root.querySelector("[data-event-section-search-input]");
-  const clearButton = root.querySelector("[data-event-section-search-clear]");
-  const panel = root.querySelector("[data-event-section-search-panel]");
-  const results = root.querySelector("[data-event-section-search-results]");
-  const status = root.querySelector("[data-event-section-search-status]");
-  const dataElement = root.querySelector("[data-event-section-search-data]");
-  const grid = document.querySelector("[data-event-section-search-grid]");
-  if (!input || !clearButton || !panel || !results || !status || !dataElement || !grid) {
+  const section = root.closest(".section-index") || document;
+  const input = root.querySelector("[data-player-section-search-input]");
+  const clearButton = root.querySelector("[data-player-section-search-clear]");
+  const status = root.querySelector("[data-player-section-search-status]");
+  const emptyState = root.querySelector("[data-player-section-search-empty-state]");
+  const dataElement = root.querySelector("[data-player-section-search-data]");
+  const grid = section.querySelector("[data-player-section-search-grid]");
+  const cards = grid ? Array.from(grid.querySelectorAll("[data-player-section-search-card]")) : [];
+  if (!input || !clearButton || !status || !emptyState || !dataElement || !grid || !cards.length) {
     return;
   }
-  root.dataset.eventSectionSearchInitialized = "true";
+  root.dataset.playerSectionSearchInitialized = "true";
 
-  let events = [];
+  let documents = [];
   try {
-    events = JSON.parse(dataElement.textContent || "[]");
+    documents = JSON.parse(dataElement.textContent || "[]");
   } catch {
-    events = [];
-  }
-
-  function resultHtml(event) {
-    const meta = [event.date, event.category].filter(Boolean).join(" - ");
-    return (
-      '<a class="event-search-result theme-events" data-event-section-search-result href="' +
-      event.href +
-      '" role="listitem"><strong>' +
-      esc(event.name) +
-      "</strong>" +
-      (meta ? "<small>" + esc(meta) + "</small>" : "") +
-      (event.summary ? "<em>" + esc(event.summary) + "</em>" : "") +
-      "</a>"
-    );
+    documents = [];
   }
 
   function resetSearch() {
@@ -219,38 +206,51 @@ function initEventsSearch(root) {
   function render() {
     const query = normalizeSearchText(input.value.trim());
     const active = query.length > 0;
-    const matches = active
-      ? events.filter(
-          (event) =>
-            normalizeSearchText(event.name).includes(query) ||
-            normalizeSearchText(event.searchText).includes(query),
-        )
-      : [];
+    let visibleCount = 0;
 
-    panel.hidden = !active;
     clearButton.hidden = !active;
-    grid.hidden = active;
+
+    cards.forEach((card) => {
+      const href = card.getAttribute("href") || "";
+      const document = documents.find((item) => item.href === href) || null;
+      const searchText = normalizeSearchText(
+        card.dataset.playerSectionSearchText ||
+          document?.searchText ||
+          card.textContent ||
+          "",
+      );
+      const isMatch = !active || searchText.includes(query);
+
+      card.hidden = !isMatch;
+      if (isMatch) {
+        visibleCount += 1;
+      }
+    });
+
+    emptyState.hidden = !active || visibleCount > 0;
 
     if (!active) {
-      results.innerHTML = "";
       status.textContent = "";
-      return;
+    } else if (visibleCount === 0) {
+      status.textContent = root.dataset.sectionSearchEmpty || "No matching entries found.";
+    } else {
+      const sectionLabel = root.dataset.sectionSearchLabel || "entries";
+      status.textContent =
+        visibleCount === 1
+          ? "1 matching entry."
+          : visibleCount + " matching " + sectionLabel.toLowerCase() + ".";
     }
-
-    if (!matches.length) {
-      results.innerHTML = '<p class="empty-inline" role="status">No Events match this search.</p>';
-      status.textContent = "No Events match this search.";
-      return;
-    }
-
-    results.innerHTML = matches.slice(0, 20).map(resultHtml).join("");
-    status.textContent =
-      matches.length === 1 ? "1 matching event." : matches.length + " matching events.";
   }
 
   input.addEventListener("input", render);
   clearButton.addEventListener("click", resetSearch);
-  wireSearchKeyboard(input, results, "[data-event-section-search-result]", {
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && input.value) {
+      event.preventDefault();
+      resetSearch();
+    }
+  });
+  wireSearchKeyboard(input, grid, "[data-player-section-search-card]:not([hidden])", {
     onEscape: resetSearch,
   });
   render();
@@ -664,6 +664,194 @@ function initPublishedMap(map) {
 }
 
 
+function initPlayerFavourites() {
+  const worldSlug = document.querySelector('meta[name="player-site-world-slug"]')?.getAttribute("content") || "world";
+  const storageKey = "world-codex:favourites:" + worldSlug;
+  const dataScript = document.querySelector("[data-player-favourites-entities]");
+  const toggles = Array.from(document.querySelectorAll("[data-player-favourite-toggle]"));
+  const grid = document.querySelector("[data-player-favourites-grid]");
+  const empty = document.querySelector("[data-player-favourites-empty]");
+  const unavailable = document.querySelector("[data-player-favourites-unavailable]");
+  let entities = [];
+  let storageAvailable = true;
+
+  try {
+    entities = dataScript ? JSON.parse(dataScript.textContent || "[]") : [];
+  } catch {
+    entities = [];
+  }
+
+  const entityById = new Map(entities.map((entity) => [entity.id, entity]));
+  const unavailableMessage = "Favourites are unavailable in this browser.";
+
+  function setToggleStatus(toggle, message) {
+    const status = toggle
+      .closest(".player-detail-action-row")
+      ?.querySelector("[data-player-favourite-status]");
+    if (status) {
+      status.textContent = message;
+    }
+  }
+
+  function announceUnavailable(toggle) {
+    setToggleStatus(toggle, unavailableMessage);
+  }
+
+  function readFavourites() {
+    try {
+      const parsed = JSON.parse(window.localStorage.getItem(storageKey) || "[]");
+      if (!Array.isArray(parsed)) {
+        return [];
+      }
+      const cleaned = parsed
+        .filter((item) => item && typeof item.id === "string" && typeof item.type === "string")
+        .filter((item) => entityById.has(item.id))
+        .map((item) => {
+          const entity = entityById.get(item.id);
+          return { id: entity.id, type: entity.type };
+        });
+      const unique = [];
+      const seen = new Set();
+      for (const item of cleaned) {
+        if (!seen.has(item.id)) {
+          seen.add(item.id);
+          unique.push(item);
+        }
+      }
+      if (unique.length !== parsed.length) {
+        writeFavourites(unique);
+      }
+      return unique;
+    } catch {
+      storageAvailable = false;
+      return [];
+    }
+  }
+
+  function writeFavourites(items) {
+    try {
+      window.localStorage.setItem(storageKey, JSON.stringify(items));
+      storageAvailable = true;
+    } catch {
+      storageAvailable = false;
+    }
+  }
+
+  function favouriteIds(items) {
+    return new Set(items.map((item) => item.id));
+  }
+
+  function styleString(theme) {
+    return [
+      "--world-dashboard-card-bg:" + theme.background,
+      "--world-dashboard-card-border:" + theme.border,
+      "--world-dashboard-card-border-strong:" + theme.borderStrong,
+      "--world-dashboard-card-glow:" + theme.glow,
+      "--world-dashboard-card-text:" + theme.text,
+    ].join(";");
+  }
+
+  function renderHome(items) {
+    if (!grid || !empty) {
+      return;
+    }
+
+    if (!storageAvailable) {
+      grid.hidden = true;
+      empty.hidden = true;
+      if (unavailable) {
+        unavailable.hidden = false;
+      }
+      return;
+    }
+
+    if (unavailable) {
+      unavailable.hidden = true;
+    }
+
+    const valid = items.map((item) => entityById.get(item.id)).filter(Boolean);
+    grid.innerHTML = valid
+      .map(
+        (entity) =>
+          '<a class="world-dashboard-card world-favourite-card" style="' +
+          styleString(entity.theme) +
+          '" href="' +
+          entity.href +
+          '"><span class="world-favourite-card-type">' +
+          entity.typeLabel +
+          '</span><span class="world-favourite-card-name">' +
+          entity.name +
+          "</span></a>",
+      )
+      .join("");
+    grid.hidden = valid.length === 0;
+    empty.hidden = valid.length > 0;
+  }
+
+  function syncToggles(items) {
+    const ids = favouriteIds(items);
+    toggles.forEach((toggle) => {
+      const id = toggle.dataset.entityId || "";
+      const name = toggle.dataset.entityName || "this entity";
+      const isFavourite = ids.has(id);
+      const label = isFavourite
+        ? "Remove " + name + " from favourites"
+        : "Add " + name + " to favourites";
+      toggle.setAttribute("aria-pressed", String(isFavourite));
+      toggle.setAttribute("aria-label", label);
+      toggle.classList.toggle("is-favourite", isFavourite);
+      const labelNode = toggle.querySelector("[data-player-favourite-label]");
+      if (labelNode) {
+        labelNode.textContent = isFavourite ? "Favourited" : "Favourite";
+      }
+      toggle.setAttribute("aria-disabled", entityById.has(id) ? "false" : "true");
+    });
+  }
+
+  function refresh() {
+    const items = readFavourites();
+    renderHome(items);
+    syncToggles(items);
+  }
+
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const id = toggle.dataset.entityId || "";
+      const entity = entityById.get(id);
+      if (!entity) {
+        return;
+      }
+      const items = readFavourites();
+      if (!storageAvailable) {
+        announceUnavailable(toggle);
+        syncToggles(items);
+        return;
+      }
+      const exists = items.some((item) => item.id === id);
+      const next = exists
+        ? items.filter((item) => item.id !== id)
+        : [{ id: entity.id, type: entity.type }, ...items];
+      writeFavourites(next);
+      if (!storageAvailable) {
+        announceUnavailable(toggle);
+        syncToggles(items);
+        return;
+      }
+      setToggleStatus(toggle, "");
+      refresh();
+    });
+  });
+
+  window.addEventListener("storage", (event) => {
+    if (event.key === storageKey) {
+      refresh();
+    }
+  });
+
+  refresh();
+}
+
+
 function initMobileNavigation() {
   document.documentElement.classList.add("player-site-js");
   document.body.classList.add("player-site-js");
@@ -978,9 +1166,10 @@ function bootstrapPlayerSite() {
   }
   initMobileNavigation();
   document.querySelectorAll("[data-static-search]").forEach(initGlobalSearch);
-  document.querySelectorAll("[data-event-section-search]").forEach(initEventsSearch);
+  document.querySelectorAll("[data-player-section-search]").forEach(initPlayerSectionSearch);
   document.querySelectorAll("[data-static-timeline]").forEach(initTimelineSearch);
   document.querySelectorAll(".published-map").forEach(initPublishedMap);
+  initPlayerFavourites();
   initImageLightbox();
   initMentionPreviews();
 }
