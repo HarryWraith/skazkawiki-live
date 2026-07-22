@@ -22,6 +22,7 @@
     "worlds/caelumbra/artefacts/index.html",
     "worlds/caelumbra/assets/media/40c77e18-0804-4540-8773-fa97e2b423df.webp",
     "worlds/caelumbra/assets/media/566931f2-241c-4478-b46c-1b07e380fe9e.webp",
+    "worlds/caelumbra/assets/media/8caf7277-3c77-48ca-8acc-0f7833e79a79.png",
     "worlds/caelumbra/assets/media/a08461c1-2cb4-44ff-a81b-9fca828e88e3.png",
     "worlds/caelumbra/assets/media/d9357a47-60f0-4dd9-850c-9bee2ebbad18.webp",
     "worlds/caelumbra/bestiary/index.html",
@@ -36,6 +37,7 @@
     "worlds/caelumbra/lore/index.html",
     "worlds/caelumbra/lore/world-creation/index.html",
     "worlds/caelumbra/maps/index.html",
+    "worlds/caelumbra/maps/sampelistan/index.html",
     "worlds/caelumbra/npcs/astrum-vanimir/index.html",
     "worlds/caelumbra/npcs/index.html",
     "worlds/caelumbra/organisations/index.html",
@@ -47,23 +49,23 @@
     "worlds/caelumbra/search/index.html",
     "worlds/caelumbra/timeline/index.html"
   ],
-  "generatedAt": "2026-07-22T16:26:20.913Z",
+  "generatedAt": "2026-07-22T18:20:46.842Z",
   "publicBasePath": "/skazkawiki-live",
   "version": 1,
   "defaultWorldId": "cmrosxwuk0000b0x0ih7y4zgn",
   "defaultWorldSlug": "caelumbra",
-  "artifactBuildId": "71870b121419",
+  "artifactBuildId": "b7ee94c026f2",
   "worlds": [
     {
-      "entityCount": 9,
+      "entityCount": 10,
       "eventsOnTimelineCount": 1,
-      "fingerprint": "a5ac54b400d35e20957b75510c07c56926b80ce95dafaae1112336bb00a17ff5",
+      "fingerprint": "861d30d226e123a53b636bcfa32c76056833d4234b109292db565265396e3391",
       "id": "cmrosxwuk0000b0x0ih7y4zgn",
-      "mapMarkerCount": 0,
-      "mediaAssetCount": 4,
+      "mapMarkerCount": 1,
+      "mediaAssetCount": 5,
       "name": "Caelumbra",
-      "regionCount": 0,
-      "searchDocumentCount": 9,
+      "regionCount": 1,
+      "searchDocumentCount": 10,
       "slug": "caelumbra"
     }
   ]
