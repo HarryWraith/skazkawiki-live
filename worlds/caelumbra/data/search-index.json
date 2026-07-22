@@ -21,6 +21,64 @@
     "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 2v8l3-3 3 3V2\" /><path d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20\" /></svg>"
   },
   {
+    "entityId": "cmrux542v0000ucx08bc36d7w",
+    "entityType": "BESTIARY_ENTRY",
+    "facts": [
+      {
+        "label": "Creature Type",
+        "value": "aberration"
+      },
+      {
+        "label": "Challenge Rating",
+        "value": "6"
+      },
+      {
+        "label": "Size",
+        "value": "Large"
+      }
+    ],
+    "href": "/worlds/caelumbra/bestiary/riftmaw-stalker",
+    "iconKey": "Swords",
+    "name": "Riftmaw Stalker",
+    "searchText": "riftmaw stalker riftmaw-stalker bestiary bestiary entry creature type aberration challenge rating 6 size large large aberration 6 aberration cr 6 large 6 chaotic evil 16 (natural armor) 114 (12d10 + 48) 40 ft., climb 30 ft.",
+    "sectionKey": "bestiary",
+    "sectionLabel": "Bestiary",
+    "summary": "",
+    "tags": [],
+    "typeLabel": "Bestiary Entry",
+    "visualIdentityKey": "bestiary",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><polyline points=\"14.5 17.5 3 6 3 3 6 3 17.5 14.5\" /><line x1=\"13\" x2=\"19\" y1=\"19\" y2=\"13\" /><line x1=\"16\" x2=\"20\" y1=\"16\" y2=\"20\" /><line x1=\"19\" x2=\"21\" y1=\"21\" y2=\"19\" /><polyline points=\"14.5 6.5 18 3 21 3 21 6 17.5 9.5\" /><line x1=\"5\" x2=\"9\" y1=\"14\" y2=\"18\" /><line x1=\"7\" x2=\"4\" y1=\"17\" y2=\"20\" /><line x1=\"3\" x2=\"5\" y1=\"19\" y2=\"21\" /></svg>"
+  },
+  {
+    "entityId": "cmrto524l0000icx0nj63w17h",
+    "entityType": "CHARACTER",
+    "facts": [
+      {
+        "label": "Species",
+        "value": "Human"
+      },
+      {
+        "label": "Classes",
+        "value": "Fighter (Rune Knight) 5"
+      },
+      {
+        "label": "Level",
+        "value": "5"
+      }
+    ],
+    "href": "/worlds/caelumbra/characters/greigor",
+    "iconKey": "UserRound",
+    "name": "Greigor",
+    "searchText": "greigor greigor characters character human fighter (rune knight) 5 species human classes fighter (rune knight) 5 level 5 human 18 51 walking 30 ft. level 5 human 18 51 walking 30 ft. raider clanmember chaotic neutral giant, common, sign, undercommon",
+    "sectionKey": "characters",
+    "sectionLabel": "Characters",
+    "summary": "Human Fighter (Rune Knight) 5",
+    "tags": [],
+    "typeLabel": "Character",
+    "visualIdentityKey": "characters",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"12\" cy=\"8\" r=\"5\" /><path d=\"M20 21a8 8 0 0 0-16 0\" /></svg>"
+  },
+  {
     "entityId": "cmrpd1wyu0000ewx0bu5rbjw6",
     "entityType": "EVENT",
     "facts": [
@@ -74,6 +132,54 @@
     "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.925 20.056a6 6 0 0 0-11.851.001\" /><circle cx=\"12\" cy=\"11\" r=\"4\" /><circle cx=\"12\" cy=\"12\" r=\"10\" /></svg>"
   },
   {
+    "entityId": "cmruqp79z0000k4x0eyfndd2f",
+    "entityType": "ORGANISATION",
+    "facts": [
+      {
+        "label": "Organisation Type",
+        "value": "Military"
+      }
+    ],
+    "href": "/worlds/caelumbra/organisations/test-organisation",
+    "iconKey": "Building2",
+    "name": "Test organisation",
+    "searchText": "test organisation test-organisation organisations organisation this is a test organisation summary organisation type military test minor national recruited soldiers and other mercenaries military active minor national recruited soldiers and other mercenaries test test description",
+    "sectionKey": "organisations",
+    "sectionLabel": "Organisations",
+    "summary": "This is a test organisation summary",
+    "tags": [
+      "test"
+    ],
+    "typeLabel": "Organisation",
+    "visualIdentityKey": "organisations",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 12h4\" /><path d=\"M10 8h4\" /><path d=\"M14 21v-3a2 2 0 0 0-4 0v3\" /><path d=\"M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2\" /><path d=\"M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16\" /></svg>"
+  },
+  {
+    "entityId": "cmrs4c9gr0002w8x0l02nje8c",
+    "entityType": "PLACE",
+    "facts": [
+      {
+        "label": "Place Type",
+        "value": "Political Region"
+      },
+      {
+        "label": "Place Status",
+        "value": "Active"
+      }
+    ],
+    "href": "/worlds/caelumbra/places/kaiijistan",
+    "iconKey": "Castle",
+    "name": "Kaiijistan",
+    "searchText": "kaiijistan kaiijistan places place place type political region place status active county active",
+    "sectionKey": "places",
+    "sectionLabel": "Places",
+    "summary": "",
+    "tags": [],
+    "typeLabel": "Place",
+    "visualIdentityKey": "places",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 5V3\" /><path d=\"M14 5V3\" /><path d=\"M15 21v-3a3 3 0 0 0-6 0v3\" /><path d=\"M18 3v8\" /><path d=\"M18 5H6\" /><path d=\"M22 11H2\" /><path d=\"M22 9v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9\" /><path d=\"M6 3v8\" /></svg>"
+  },
+  {
     "entityId": "cmrs4aslp0000w8x0q75ra7xt",
     "entityType": "PLACE",
     "facts": [
@@ -97,6 +203,31 @@
     "sectionKey": "places",
     "sectionLabel": "Places",
     "summary": "This is a summary",
+    "tags": [],
+    "typeLabel": "Place",
+    "visualIdentityKey": "places",
+    "iconSvg": "<svg aria-hidden=\"true\" class=\"search-result-icon\" fill=\"none\" height=\"24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 5V3\" /><path d=\"M14 5V3\" /><path d=\"M15 21v-3a3 3 0 0 0-6 0v3\" /><path d=\"M18 3v8\" /><path d=\"M18 5H6\" /><path d=\"M22 11H2\" /><path d=\"M22 9v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9\" /><path d=\"M6 3v8\" /></svg>"
+  },
+  {
+    "entityId": "cmrs4bl0i0001w8x0kmwslwx9",
+    "entityType": "PLACE",
+    "facts": [
+      {
+        "label": "Place Type",
+        "value": "Settlement"
+      },
+      {
+        "label": "Place Status",
+        "value": "Active"
+      }
+    ],
+    "href": "/worlds/caelumbra/places/velkaria",
+    "iconKey": "Castle",
+    "name": "Velkaria",
+    "searchText": "velkaria velkaria places place no summary has been added yet. place type settlement place status active city active",
+    "sectionKey": "places",
+    "sectionLabel": "Places",
+    "summary": "No summary has been added yet.",
     "tags": [],
     "typeLabel": "Place",
     "visualIdentityKey": "places",
