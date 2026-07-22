@@ -683,6 +683,8 @@ function initPlayerFavourites() {
 
   const entityById = new Map(entities.map((entity) => [entity.id, entity]));
   const unavailableMessage = "Favourites are unavailable in this browser.";
+  const addedMessage = "Added to favourites.";
+  const removedMessage = "Removed from favourites.";
 
   function setToggleStatus(toggle, message) {
     const status = toggle
@@ -837,8 +839,8 @@ function initPlayerFavourites() {
         syncToggles(items);
         return;
       }
-      setToggleStatus(toggle, "");
       refresh();
+      setToggleStatus(toggle, exists ? removedMessage : addedMessage);
     });
   });
 
