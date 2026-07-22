@@ -1,11 +1,11 @@
 {
-  "artifactBuildId": "b7ee94c026f2",
+  "artifactBuildId": "d89f6408176f",
   "defaultWorld": {
     "displayName": "Caelumbra",
     "id": "cmrosxwuk0000b0x0ih7y4zgn",
     "slug": "caelumbra"
   },
-  "generatedAt": "2026-07-22T18:20:39.902Z",
+  "generatedAt": "2026-07-22T19:34:11.494Z",
   "publicBasePath": "/skazkawiki-live",
   "rootRoute": "/",
   "version": 1,
@@ -15,14 +15,14 @@
       "entities": [
         {
           "classificationHash": "6db54bf5f4b3a42b1a77e578173ac63f53f437448a42f275ece4303d5fefa4bc",
-          "contentHash": "f1b12336e9a8d3775076fa78a8bd55bf76e224b7d5a0969780f98ebadbf54fda",
+          "contentHash": "d1b31101186b132f0c25b6892f5f2bbcd76c6337f03c36f00b84cbd991098dd3",
           "mapHash": "8c86d359a611c9f58b0cd822abfbbd345c06945f3694c0d833bc786fd5659085",
           "mediaHash": "ca3cb53612600e18df735d7e795847a472128f03ce3e3dfc1de84e78260a6150",
           "relationshipHash": "593a5163469fffebefdb2dfb3122f2f6cbaf465a17a81a5a3db03307d6a2eab8",
           "routeHash": "15b33984219cac8d18fbdc5420b3ca7edbf61734b1f831b6f606c10971723e08",
           "searchHash": "828ead2846c4be0656e4fbf5e80e4e9f64b1ed0b21612e600a13dd897f561859",
           "timelineHash": "f3cb1be7bab48b23613fd03a7bb3551bf77dd7d4e5000d6abe33575e8bbb1810",
-          "fullHash": "49e7fe70ac37d071c36e9de5789691ea9ec395641215aa00e481c4e891e4d0aa",
+          "fullHash": "e8b6ae5a5a810bce55ff95acecd43a6ddb7fb58e398458914306c48c13e83395",
           "id": "cmrwd2xht0000xsx0hfm31ggn",
           "mediaState": "Primary media assigned",
           "route": "/maps/sampelistan",
@@ -237,7 +237,7 @@
         "lore": 1
       },
       "eventsOnTimelineCount": 1,
-      "hash": "6bab6fcacd240c622dbff6945a53b579a8bdf91977ee6b3958caa5ef7a5e0fcb",
+      "hash": "63997cb17a56ac484dd6ecb83113980acb474d2da581ba8023482949acb05dd1",
       "id": "cmrosxwuk0000b0x0ih7y4zgn",
       "mapMarkerCount": 1,
       "mediaAssetCount": 5,
@@ -250,5 +250,5 @@
       "worldRootRoute": "/worlds/caelumbra/"
     }
   ],
-  "artifactHash": "d865ee3f3bf3b3a54511e96cdd510c1d59b6da24ba27366e03be8da26012a17f"
+  "artifactHash": "34da307caa87ca4a7b6c935766ce5eb5c239097e7ef8ecbd14e6e854759e82b1"
 }
