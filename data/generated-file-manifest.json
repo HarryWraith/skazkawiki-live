@@ -38,6 +38,7 @@
     "worlds/caelumbra/lore/world-creation/index.html",
     "worlds/caelumbra/maps/index.html",
     "worlds/caelumbra/maps/sampelistan/index.html",
+    "worlds/caelumbra/maps/sampelistan/viewer/index.html",
     "worlds/caelumbra/npcs/astrum-vanimir/index.html",
     "worlds/caelumbra/npcs/index.html",
     "worlds/caelumbra/organisations/index.html",
@@ -49,12 +50,12 @@
     "worlds/caelumbra/search/index.html",
     "worlds/caelumbra/timeline/index.html"
   ],
-  "generatedAt": "2026-07-23T08:06:55.086Z",
+  "generatedAt": "2026-07-23T16:06:09.380Z",
   "publicBasePath": "/skazkawiki-live",
   "version": 1,
   "defaultWorldId": "cmrosxwuk0000b0x0ih7y4zgn",
   "defaultWorldSlug": "caelumbra",
-  "artifactBuildId": "44dca66db7a5",
+  "artifactBuildId": "af9b8f8c3129",
   "worlds": [
     {
       "entityCount": 10,
