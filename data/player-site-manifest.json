@@ -1,11 +1,11 @@
 {
-  "artifactBuildId": "4a914af40026",
+  "artifactBuildId": "44dca66db7a5",
   "defaultWorld": {
     "displayName": "Caelumbra",
     "id": "cmrosxwuk0000b0x0ih7y4zgn",
     "slug": "caelumbra"
   },
-  "generatedAt": "2026-07-23T07:12:46.719Z",
+  "generatedAt": "2026-07-23T08:05:16.706Z",
   "publicBasePath": "/skazkawiki-live",
   "rootRoute": "/",
   "version": 1,
