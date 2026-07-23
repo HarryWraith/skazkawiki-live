@@ -114,12 +114,20 @@
       {
         "label": "Map Type",
         "value": "Continent"
+      },
+      {
+        "label": "Markers",
+        "value": "1"
+      },
+      {
+        "label": "Regions",
+        "value": "1"
       }
     ],
     "href": "/worlds/caelumbra/maps/sampelistan",
     "iconKey": "Map",
     "name": "Sampelistan",
-    "searchText": "sampelistan sampelistan maps map this is a sample map of a fictional place map type continent continent continent sample content",
+    "searchText": "sampelistan sampelistan maps map this is a sample map of a fictional place map type continent markers 1 regions continent continent sample content",
     "sectionKey": "maps",
     "sectionLabel": "Maps",
     "summary": "This is a sample map of a fictional place",

@@ -1,11 +1,11 @@
 {
-  "artifactBuildId": "d89f6408176f",
+  "artifactBuildId": "4a914af40026",
   "defaultWorld": {
     "displayName": "Caelumbra",
     "id": "cmrosxwuk0000b0x0ih7y4zgn",
     "slug": "caelumbra"
   },
-  "generatedAt": "2026-07-22T19:34:11.494Z",
+  "generatedAt": "2026-07-23T07:12:46.719Z",
   "publicBasePath": "/skazkawiki-live",
   "rootRoute": "/",
   "version": 1,
@@ -15,14 +15,14 @@
       "entities": [
         {
           "classificationHash": "6db54bf5f4b3a42b1a77e578173ac63f53f437448a42f275ece4303d5fefa4bc",
-          "contentHash": "d1b31101186b132f0c25b6892f5f2bbcd76c6337f03c36f00b84cbd991098dd3",
-          "mapHash": "8c86d359a611c9f58b0cd822abfbbd345c06945f3694c0d833bc786fd5659085",
+          "contentHash": "52535fe59ba82ca0a179c69548d654342dcf3a0707eeff87b68145baa7fcd9e9",
+          "mapHash": "b910dc554b95421d547476bad5dfca02ed67fac768338a2cdf41e426cb014853",
           "mediaHash": "ca3cb53612600e18df735d7e795847a472128f03ce3e3dfc1de84e78260a6150",
           "relationshipHash": "593a5163469fffebefdb2dfb3122f2f6cbaf465a17a81a5a3db03307d6a2eab8",
           "routeHash": "15b33984219cac8d18fbdc5420b3ca7edbf61734b1f831b6f606c10971723e08",
-          "searchHash": "828ead2846c4be0656e4fbf5e80e4e9f64b1ed0b21612e600a13dd897f561859",
+          "searchHash": "8659319f332045aa8a803e0d81cd61164e0612d85b7f87d085c9abdb502eb06e",
           "timelineHash": "f3cb1be7bab48b23613fd03a7bb3551bf77dd7d4e5000d6abe33575e8bbb1810",
-          "fullHash": "e8b6ae5a5a810bce55ff95acecd43a6ddb7fb58e398458914306c48c13e83395",
+          "fullHash": "abd0a8cbd1a4c6faaf94b2599ed80aff0e42a73718ab524d8287600b09aa6289",
           "id": "cmrwd2xht0000xsx0hfm31ggn",
           "mediaState": "Primary media assigned",
           "route": "/maps/sampelistan",
@@ -237,7 +237,7 @@
         "lore": 1
       },
       "eventsOnTimelineCount": 1,
-      "hash": "63997cb17a56ac484dd6ecb83113980acb474d2da581ba8023482949acb05dd1",
+      "hash": "49a3eeea0050dff31afb6a6f309a31b19c99728a1c5d35516d2805030b8bf7d1",
       "id": "cmrosxwuk0000b0x0ih7y4zgn",
       "mapMarkerCount": 1,
       "mediaAssetCount": 5,
@@ -250,5 +250,5 @@
       "worldRootRoute": "/worlds/caelumbra/"
     }
   ],
-  "artifactHash": "34da307caa87ca4a7b6c935766ce5eb5c239097e7ef8ecbd14e6e854759e82b1"
+  "artifactHash": "98f4dabd031a60f9738a1e1a6f1e1564fdc0af666cd58ab3d636e6c3e4b6841d"
 }

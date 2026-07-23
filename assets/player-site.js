@@ -499,6 +499,7 @@ function initPublishedMap(map) {
   const plane = map.querySelector(".map-plane");
   const width = Number(map.dataset.width);
   const height = Number(map.dataset.height);
+  const presentation = map.dataset.mapPresentation || "viewer";
   if (!viewport || !plane || !width || !height) {
     return;
   }
@@ -514,7 +515,10 @@ function initPublishedMap(map) {
       "translate3d(" + view.x + "px," + view.y + "px,0) scale(" + view.scale + ")";
     map.querySelectorAll(".marker").forEach((marker) => {
       marker.style.setProperty("--map-marker-target-scale", String(1 / view.scale));
-      marker.style.setProperty("--map-marker-artwork-scale", String(view.scale));
+      marker.style.setProperty(
+        "--map-marker-artwork-scale",
+        presentation === "viewer" ? String(view.scale) : "1",
+      );
     });
   }
 
